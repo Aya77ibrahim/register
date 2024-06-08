@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="homepage">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none ">
+                <div class="container-fluid">
+                  <a class="navbar-brand " href="#">SMART LOGIN
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                      </li>
+                      
+                     
+                     
+                    </ul>
+                      <button class="btn btn-outline-success" type="submit" onclick="loginPage()">log out</button>
+                    
+                  </div>
+                </div>
+              </nav>  
+        </div>
+        
+        <br><br><br>
+        <div class="container d-flex  flex-column  m-auto mt-5 w-50 text-center">
+                <h1 class="text-center text-info">Smart Login System                </h1>
+                <br>
+                <div class="input-control signup d-none">
+                    
+                <input type="text" name="userName" id="userName" placeholder=" Enter your Name" class="form-control ">
+                <br>
+                <input type="email" name="email" id="userEmail" placeholder=" Enter your Email" class="form-control">
+                <br>
+                <input type="password" name="pass" id="userPass" placeholder=" Enter your password" class="form-control">
+                <br>
+                <button class="btn btn-outline-info my-3 w-100" onclick=" addarray()">Sign Up</button>
+                <p class="text-white d-inline text-center m-auto ">You have an account?</p>
+                <a href="#" class="text-white text-center signin" onclick="loginPage()" > Signin</a>
+                </div>
+                    
+                <br><br>
+
+                <div class="login ">
+                    
+                   
+                    <input type="email" name="email" id="userEmailLog" placeholder=" Enter your Email" class="form-control">
+                    <br>
+                    <input type="password" name="pass" id="userPassLog" placeholder=" Enter your password" class="form-control">
+                    <br>
+                    <p id="incorrect"></p>
+                    <button class="btn btn-outline-info my-3 w-100  sign" onclick="logg()">Signin</button>
+                    <p class="text-white d-inline text-center m-auto ">You donot have an account?</p>
+                    <a href="#" class="text-white text-center " onclick=" signupPage()" > Sign Up</a>
+                    </div>
+            <!-- </form> -->
+        </div>
+      
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
